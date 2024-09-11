@@ -14,7 +14,7 @@
     NSInteger count = 0;
 
     for (NSNumber* number in array) {
-        if ([number intValue] % 2 != 0) {
+        if (number.intValue % 2 != 0) {
             count++;
         }
     }

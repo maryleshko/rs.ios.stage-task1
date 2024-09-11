@@ -13,7 +13,7 @@
 }
 
 - (BOOL)isValidNumber {
-    if ([self length] > 100) {
+    if (self.length > 100) {
         return NO;
     }
     NSNumberFormatter *formatter = [NSString numberFormatter];
