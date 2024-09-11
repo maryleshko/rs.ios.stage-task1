@@ -4,7 +4,7 @@
 
 - (NSArray *)numberConverter:(NSNumber *)number {
     if (number == nil) {
-        return [[NSArray alloc] init];
+        return @[];
     }
 
     NSMutableArray *characters = [[NSMutableArray alloc] init];
