@@ -13,6 +13,9 @@
 }
 
 - (BOOL)isValidNumber {
+    if ([self length] > 100) {
+        return NO;
+    }
     NSNumberFormatter *formatter = [NSString numberFormatter];
     NSNumber *number = [formatter numberFromString:self];
     return number != nil;
